@@ -32,7 +32,7 @@ function App() {
       />
       {isConnected && (
         <div className="fixed bottom-4 left-4 text-xs text-green-600 bg-green-50 px-3 py-1 rounded">
-           Connected
+          Connected
         </div>
       )}
       <Routes>

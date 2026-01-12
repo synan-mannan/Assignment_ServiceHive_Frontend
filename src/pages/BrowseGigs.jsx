@@ -15,7 +15,6 @@ export default function BrowseGigs() {
   const { gigs, loading, error } = useSelector((state) => state.gigs);
   const { isAuthenticated, user } = useSelector((state) => state.auth);
 
-
   useEffect(() => {
     fetchGigs();
   }, []);

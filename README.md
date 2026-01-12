@@ -14,9 +14,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173)
+Open [http://localhost](http://localhost)
 
-Backend must run on port 5000.
+Backend must be running.
 
 ## Commands
 
@@ -80,7 +80,7 @@ Redux Toolkit with 3 slices:
 
 ## API Integration
 
-Backend URL: `http://localhost:5000`
+Backend URL: `http://localhost`
 
 Configure in [vite.config.js](vite.config.js)
 

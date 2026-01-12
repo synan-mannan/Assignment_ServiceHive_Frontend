@@ -42,7 +42,12 @@ export default function GigDetails() {
   }, [gigId]);
 
   useEffect(() => {
-    if (currentGig && isAuthenticated && user && currentGig.ownerId._id === user.id) {
+    if (
+      currentGig &&
+      isAuthenticated &&
+      user &&
+      currentGig.ownerId._id === user.id
+    ) {
       fetchBidsForGig();
     }
   }, [currentGig, isAuthenticated, user]);
