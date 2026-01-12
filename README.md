@@ -16,7 +16,11 @@ npm run dev
 
 Open [http://localhost](http://localhost)
 
+<<<<<<< HEAD
 Backend must be running.
+=======
+Backend must run on port "mentioned in env".
+>>>>>>> 333ba6d6ee04a6c6e46076d0d4601034a1d9edc1
 
 ## Commands
 
@@ -79,8 +83,6 @@ Redux Toolkit with 3 slices:
 - **Bids** - Bidding operations
 
 ## API Integration
-
-Backend URL: `http://localhost`
 
 Configure in [vite.config.js](vite.config.js)
 
