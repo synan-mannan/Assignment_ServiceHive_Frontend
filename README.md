@@ -16,7 +16,7 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173)
 
-Backend must run on port 5000.
+Backend must run on port "mentioned in env".
 
 ## Commands
 
