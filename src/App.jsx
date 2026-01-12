@@ -15,6 +15,7 @@ import Register from "./pages/Register";
 import PostGig from "./pages/PostGig";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useNotifications } from "./hooks/useNotifications";
+import  Cookie  from "js-cookie";
 
 function App() {
   const auth = useSelector((state) => state.auth);
@@ -22,6 +23,10 @@ function App() {
     auth.user?.id || auth.user?._id,
     auth.isAuthenticated
   );
+  let token = localStorage.getItem("token")
+  if(!Cookie.get("token")){
+    Cookie.set("token", token, { expires: 30 })
+  }
 
   return (
     <Router>
