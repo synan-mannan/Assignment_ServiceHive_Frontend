@@ -80,8 +80,6 @@ Redux Toolkit with 3 slices:
 
 ## API Integration
 
-Backend URL: `http://localhost:5000`
-
 Configure in [vite.config.js](vite.config.js)
 
 ## Deployment
