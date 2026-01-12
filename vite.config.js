@@ -13,5 +13,4 @@ export default defineConfig({
       },
     },
   },
-  base: "/Assignment_ServiceHive_Frontend/",
 });
