@@ -4,6 +4,12 @@ import App from "./App.jsx";
 import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./store/index.js";
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get("redirect");
+
+if (redirect) {
+  window.history.replaceState(null, "", redirect);
+}
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
