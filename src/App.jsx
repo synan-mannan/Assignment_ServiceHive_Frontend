@@ -23,10 +23,10 @@ function App() {
   const isConnected = false;
   const removeNotification = () => {};
 
-  let token = localStorage.getItem("token");
-  if (token && !Cookie.get("token")) {
-    Cookie.set("token", token, { expires: 30 });
-  }
+  // let token = localStorage.getItem("token");
+  // if (token && !Cookie.get("token")) {
+  //   Cookie.set("token", token, { expires: 30 });
+  // }
 
   return (
     <Router>
