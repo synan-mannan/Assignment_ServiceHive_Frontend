@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -18,16 +18,15 @@ import Cookie from "js-cookie";
 
 function App() {
   const auth = useSelector((state) => state.auth);
-  // Socket-based notifications removed; use empty/default values
+
   const notifications = [];
   const isConnected = false;
   const removeNotification = () => {};
+
   let token = localStorage.getItem("token");
   if (token && !Cookie.get("token")) {
     Cookie.set("token", token, { expires: 30 });
   }
-
-  //hello
 
   return (
     <Router>
@@ -36,11 +35,7 @@ function App() {
         notifications={notifications}
         onRemove={removeNotification}
       />
-      {isConnected && (
-        <div className="fixed bottom-4 left-4 text-xs text-green-600 bg-green-50 px-3 py-1 rounded">
-          Connected
-        </div>
-      )}
+
       <Routes>
         <Route path="/" element={<BrowseGigs />} />
         <Route path="/gig/:gigId" element={<GigDetails />} />
