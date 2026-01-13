@@ -187,7 +187,7 @@ export default function GigDetails() {
               </div>
 
               <p className="text-2xl font-bold text-green-600 mb-6">
-                ${currentGig.budget}
+                ₹{currentGig.budget}
               </p>
 
               <div className="border-t pt-6">
