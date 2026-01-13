@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://synan-mannan.github.io/Assignment_ServiceHive_Frontend",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
