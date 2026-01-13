@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Assignment_ServiceHive_Frontend/",
+  base: "https://synan-mannan.github.io/Assignment_ServiceHive_Frontend/",
   server: {
     port: 5173,
     proxy: {
