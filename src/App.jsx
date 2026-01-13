@@ -14,18 +14,17 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PostGig from "./pages/PostGig";
 import ProtectedRoute from "./components/ProtectedRoute";
-import { useNotifications } from "./hooks/useNotifications";
-import  Cookie  from "js-cookie";
+import Cookie from "js-cookie";
 
 function App() {
   const auth = useSelector((state) => state.auth);
-  const { notifications, isConnected, removeNotification } = useNotifications(
-    auth.user?.id || auth.user?._id,
-    auth.isAuthenticated
-  );
-  let token = localStorage.getItem("token")
-  if(!Cookie.get("token")){
-    Cookie.set("token", token, { expires: 30 })
+  // Socket-based notifications removed; use empty/default values
+  const notifications = [];
+  const isConnected = false;
+  const removeNotification = () => {};
+  let token = localStorage.getItem("token");
+  if (token && !Cookie.get("token")) {
+    Cookie.set("token", token, { expires: 30 });
   }
 
   return (
