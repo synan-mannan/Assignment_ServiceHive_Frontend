@@ -100,7 +100,7 @@ export default function BrowseGigs() {
                     Posted by: {gig.ownerId.name}
                   </p>
                   <p className="text-2xl font-bold text-green-600">
-                    ${gig.budget}
+                    ₹{gig.budget}
                   </p>
                 </div>
                 <div className="flex items-center justify-between">
